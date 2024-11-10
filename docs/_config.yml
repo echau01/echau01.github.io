@@ -29,7 +29,6 @@ github_username: echau01
 
 # Build settings
 theme: minima
-markdown: kramdown
 plugins:
   - jekyll-feed
 
