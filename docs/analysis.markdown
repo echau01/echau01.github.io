@@ -4,8 +4,14 @@ title: Real Analysis Notes
 permalink: /analysis/
 ---
 
-Here are my notes for real analysis based on Chapters 1 to 7 of Rudin's _Principles of Mathematical Analysis_. In addition to the standard definitions, theorems, and proofs, I have provided my own commentary to motivate the ideas of real analysis. I have also included interesting exercises to train the reader's intuition and proof technique, and to expand on the main text.
+Here are my notes for real analysis based on Chapters 1 to 7 of Rudin's _Principles of Mathematical Analysis_. We start from the very beginning: defining what a "real number" is. Then, we introduce metric spaces and study their topological properties. With this background, we proceed to give a rigorous treatment of everything from "first-year" calculus: sequences and series, limits and continuity, differentiation, and integration. We finish with a chapter on uniform convergence, which is all about interchanging limits.
 
-Prerequisites: first-year calculus, linear algebra, and an "introduction to proof" course.
+In addition to the standard definitions, theorems, and proofs, there are lots of exercises that I hope will challenge the reader.
 
-[Link to PDF](/assets/pdfs/Introductory_Analysis_Notes.pdf)
+Prerequisites:
+- First-year calculus: limits, continuity, differentiation, integration, and series convergence tests.
+- Basic proof techniques: direct proof, proof by contrapositive, proof by contradiction, proof by (weak or strong) induction.
+- Basic set theory: intersections, unions, set complements, and how they interact with each other (e.g. you should know that $A\cap (B\cup C) = (A\cap B)\cup (A\cap C)$).
+- Linear algebra: linear transformations, null space and column space, determinants, eigenvalues and eigenvectors, orthogonality and projections.
+
+[Download the PDF notes here](/assets/pdfs/Introductory_Analysis_Notes.pdf)
