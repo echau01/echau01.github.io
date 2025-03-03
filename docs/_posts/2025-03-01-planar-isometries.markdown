@@ -33,7 +33,7 @@ Therefore,
 \\[0 = v_1^2w_2^2 + v_2^2w_1^2 - 2v_1w_1v_2w_2 = (v_1w_2 - v_2w_1)^2\\]
 and (miraculously) we deduce that $v_1w_2 = v_2w_1$. By assumption, $v = (v_1, v_2)\neq 0$, so one of $v_1, v_2$ is nonzero. Without loss of generality we can take $v_1$ to be nonzero. If $v_2 = 0$, then $v_1w_2 = 0$, so $w_2 = 0$. In this case, we have $v = (v_1, 0)$ and $w = (w_1, 0)$, so $v = \frac{v_1}{w_1}w$. Now suppose $v_2\neq 0$. If $w_2 = 0$, then $w_1 = 0$ also, which is impossible since $w\neq 0$. Hence, $w_2\neq 0$, so $w_1\neq 0$ and hence $\frac{v_1}{w_1} = \frac{v_2}{w_2}$. Therefore, $v = \frac{v_1}{w_1}w$.
 >
-> We have showed that there exists a real number $c$ such that $v = cw$. It remains to show that $c > 0$. Substituting $v = cw$ into the equation <span>$||v + w|| = ||v|| + ||w||$</span> and simplifying on both sides gives
+> We have shown that there exists a real number $c$ such that $v = cw$. It remains to show that $c > 0$. Substituting $v = cw$ into the equation <span>$||v + w|| = ||v|| + ||w||$</span> and simplifying on both sides gives
 \\[|c + 1|\cdot ||w|| = (|c| + 1)||w||.\\]
 Hence, $|c + 1| = |c| + 1$. Suppose towards a contradiction that $c\leq 0$. Then $|c| = -c$, so $|c + 1| = -c + 1$. If $c + 1 = -c + 1$, then $c = 0$, so $v = 0$, contradicting the assumption that $v\neq 0$. The other possibility is that $-(c + 1) = -c + 1$, which implies the contradiction $-1 = 1$. Therefore, $c > 0$. QED.
 
@@ -74,7 +74,7 @@ Therefore, $j = 1$, so $T(cv) = cT(v)$. QED.
 
 > *Proof.* If $v = w$, then by Proposition 1,
 \\[T(v + w) = T(2v) = 2T(v) = T(v) + T(w).\\]
-Suppose $v\neq w$. Let $m = \frac{1}{2}(v + w)$. Visually, $m$ is the midpoint of the line segment between $v$ and $w$. Note that <span>$||v - m|| = ||m - w||$</span> and that <span>$||v - w|| = ||v - m|| + ||m - w||$</span>. Hence,
+Suppose $v\neq w$. Let $m = \frac{1}{2}(v + w)$. Then $m$ is the midpoint of the line segment between $v$ and $w$, which means <span>$||v - m|| = ||m - w||$</span> and <span>$||v - w|| = ||v - m|| + ||m - w||$</span>. Hence,
 \\[||T(v) - T(m)|| = ||T(m) - T(w)||\\]
 and
 > <div>
