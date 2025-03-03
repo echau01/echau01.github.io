@@ -4,17 +4,10 @@ title: About
 permalink: /about/
 ---
 
-I graduated from UBC with a math (and computer science) degree in 2024. While I've ultimately chosen to pursue software development as a career, I still enjoy doing math for fun. This blog is where I write about math.
+I graduated from UBC with a math and computer science degree in 2024. While I've ultimately chosen to pursue software development as a career, I still enjoy doing math for fun. This blog is where I write about math.
 
 ---
 
-<b>A quick browser test:</b>
+<b>A quick browser test:</b> you should see [Parseval's Theorem](https://en.wikipedia.org/wiki/Parseval%27s_theorem) written below:
 
-To verify that math text loads correctly, you should see a statement of the Mean Value Theorem below.
-
-<b>Theorem (MVT).</b> Let $a < b$ be real numbers. Suppose $f: [a, b]\to\mathbb{R}$ is
-continuous on $[a, b]$ and differentiable on $(a, b)$. Then there exists $c\in (a, b)$
-such that
-<div>
-    \[\frac{f(b)-f(a)}{b-a} = f'(c).\]
-</div>
+\\[\sum_{n=-\infty}^{\infty} \|\hat{f}(n)\|^2 = \frac{1}{2\pi}\int_{-\pi}^{\pi} \|f\|^2\,dx.\\]
