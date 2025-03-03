@@ -1,3 +1,6 @@
 blockquote {
-    font-style: normal;
+    font-style: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+    font-size: inherit;
 }
