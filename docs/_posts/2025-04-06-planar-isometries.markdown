@@ -85,16 +85,12 @@ and
 >   &= ||T(v) - T(m)|| + ||T(m) - T(w)||.
 > \end{align*}
 > </div>
-> The assumption $v\neq w$ implies that $m\neq v$ and $m\neq w$. Hence, $T(v) - T(m)\neq 0$ and $T(m) - T(w)\neq 0$ since $T$ is an isometry. By the Lemma, there exists $c > 0$ such that $T(v) - T(m) = c[T(m) - T(w)]$. Rearranging gives
-\\[T(m) = \frac{1}{c+1}[T(v) + cT(w)].\\]
-Since $||T(v) - T(m)|| = ||T(m) - T(w)||$, it follows that
-\\[\left|\left|T(v) - \frac{1}{c+1}[T(v) + cT(w)]\right|\right| = \left|\left|\frac{1}{c+1}[T(v) + cT(w)] - T(w)\right|\right|,\\]
-which simplifies to
-\\[\frac{c}{c+1}||T(v) - T(w)|| = \frac{1}{c+1}||T(v) - T(w)||.\\]
-Since $v\neq w$, we know that <span>$||T(v) - T(w)||\neq 0$</span>, so $\frac{c}{c+1} = \frac{1}{c+1}$. Hence, $c = 1$, so
-\\[T(m) = \frac{1}{2}[T(m) + T(w)].\\]
+> The assumption $v\neq w$ implies that $m\neq v$ and $m\neq w$. Hence, $T(v) - T(m)\neq 0$ and $T(m) - T(w)\neq 0$ since $T$ is an isometry. By the Lemma, there exists $c > 0$ such that $T(v) - T(m) = c[T(m) - T(w)]$. Hence,
+\\[||T(v) - T(m)|| = c||T(m) - T(w)||.\\]
+But $||T(v) - T(m)|| = ||T(m) - T(w)||\neq 0$, so $c = 1$. Therefore,
+\\[T(m) = \frac{1}{2}[T(v) + T(w)].\\]
 Finally, recalling that $m = \frac{1}{2}(v + w)$, we deduce that
-\\[T(v + w) = T(2m) = 2T(m) = T(m) + T(w)\\]
+\\[T(v + w) = T(2m) = 2T(m) = T(v) + T(w)\\]
 by Proposition 1. QED.
 
 Next, we want to prove that $T$ is [orthogonal](https://en.wikipedia.org/wiki/Orthogonal_transformation), which means $T$ preserves angles between vectors. Symbolically, we want to prove the following result.
@@ -146,7 +142,7 @@ The key Lemma generalizes to $\mathbb{R}^n$ for any $n\geq 1$.
 **Generalized Lemma.** Let $v, w\in\mathbb{R}^n\setminus\\{0\\}$ such that <span>$||v + w|| = ||v|| + ||w||$</span>. Then there exists $c > 0$ such that $v = cw$.
 
 > *Proof.* Let $v = (v_1, \dots, v_n)$ and $w = (w_1, \dots, w_n)$. Squaring both sides of <span>$||v + w|| = ||v|| + ||w||$</span> gives
-\\[$||v + w||^2 = ||v||^2 + ||w||^2 + 2||v||\cdot ||w||.\\]
+\\[||v + w||^2 = ||v||^2 + ||w||^2 + 2||v||\cdot ||w||.\\]
 In terms of the $v_i$ and $w_i$,
 \\[\sum_{i=1}^n (v_i^2 + w_i^2 + 2v_iw_i) = \sum_{i=1}^n (v_i^2 + w_i^2) + 2\sqrt{\sum_{i=1}^n v_i^2\sum_{j=1}^n w_j^2}.\\]
 Hence,
