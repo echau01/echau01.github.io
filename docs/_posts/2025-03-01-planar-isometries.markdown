@@ -3,6 +3,8 @@ layout: post
 title: 'Distance-preserving functions in $\mathbb{R}^2$'
 ---
 
+(Last edited Apr 7, 2025.)
+
 An _isometry_ of $\mathbb{R}^2$ is a function $f: \mathbb{R}^2\to\mathbb{R}^2$ that preserves distances between points, which means
 \\[||f(v) - f(w)|| = ||v - w||\\]
 for all $v, w\in\mathbb{R}^2$.
