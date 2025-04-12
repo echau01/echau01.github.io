@@ -3,11 +3,13 @@ layout: post
 title: Linear isometries preserve angles
 ---
 
+(Last edited Apr 12, 2025.)
+
 In my previous post on [classifying isometries in $\mathbb{R}^2$]({% post_url 2025-03-01-planar-isometries %}), I proved that any linear isometry $T: \mathbb{R}^2\to\mathbb{R}^2$ satisfies
 \\[\langle v, w\rangle = \langle T(v), T(w)\rangle\\]
 for all $v, w\in\mathbb{R}^2$, where $\langle\cdot, \cdot\rangle$ is the dot product on $\mathbb{R}^2$. In other words, $T$ preserves the angle between any pair of vectors $v, w\in\mathbb{R}^2$.
 
-This turns out to be true if $V$ is any vector space with an inner product. Let $V$ be an [inner-product space](https://en.wikipedia.org/wiki/Inner_product_space) over $\mathbb{R}$ or $\mathbb{C}$, and let $T: V\to V$ be a linear isometry. Then for all $v, w\in V$, we have that
+I will now show that the same result holds if we replace $\mathbb{R}^2$ with any vector space $V$ that has an inner product. Let $V$ be an [inner product space](https://en.wikipedia.org/wiki/Inner_product_space) over $\mathbb{R}$ or $\mathbb{C}$, and let $T: V\to V$ be a linear isometry. Then for all $v, w\in V$, we have that
 \\[||v + w||^2 = ||T(v + w)||^2 = ||T(v) + T(w)||^2.\\]
 Expanding both sides gives
 \\[||v||^2 + \langle v, w\rangle + \langle w, v\rangle + ||w||^2 = ||T(v)||^2 + \langle T(v), T(w)\rangle + \langle T(w), T(v)\rangle + ||T(w)||^2.\\]
@@ -24,7 +26,7 @@ Hence,
 \\[2\text{Re}(\langle v, w\rangle) = 2\text{Re}(\langle T(v), T(w)),\\]
 so
 \\[\text{Re}(\langle v, w\rangle) = \text{Re}(\langle T(v), T(w)\rangle).\\]
-This equation holds for _all_ vectors $v, w\in V$. Since $-iv$ is also an element of $V$, we can substitute $v$ for $-iv$ to get
+This equation holds for _all_ vectors $v, w\in V$. Since $-iv$ is also an element of $V$, we can substitute $-iv$ for $v$ to get
 \\[\text{Re}(\langle -iv, w\rangle) = \text{Re}(\langle T(-iv), T(w)\rangle).\\]
 This simplifies to
 \\[\text{Re}(-i\langle v, w\rangle) = \text{Re}(-i\langle T(v), T(w)\rangle).\\]
