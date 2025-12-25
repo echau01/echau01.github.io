@@ -46,7 +46,7 @@ Specializing $A'$ to $A$, we conclude that $f^g$ and $f$ are equivalent function
 
 Addendum: another way to think of $f$ and $f'$ being equivalent is to note that the following diagram commutes.
 
-<img src="/assets/images/equivalent-functions-cd.PNG" alt="Commutative diagram for gf = f'g" width="200" style="display: block; margin: auto">
+<img src="/assets/images/2024-11-11-conjugation/equivalent-functions-cd.PNG" alt="Commutative diagram for gf = f'g" width="200" style="display: block; margin: auto">
 
 # Similar matrices revisited
 
