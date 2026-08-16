@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linear isometries preserve angles
+title: Linear isometries preserve angles (isometries part 2)
 ---
 
 (Last edited Apr 12, 2025.)

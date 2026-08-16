@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Distance-preserving functions in $\mathbb{R}^2$'
+title: 'Distance-preserving functions in $\mathbb{R}^2$ (isometries part 1)'
 ---
 
 (Last edited Apr 7, 2025.)
@@ -37,7 +37,7 @@ and (miraculously) we deduce that $v_1w_2 = v_2w_1$. By assumption, $v = (v_1, v
 >
 > We have shown that there exists a real number $c$ such that $v = cw$. It remains to show that $c > 0$. Substituting $v = cw$ into the equation <span>$||v + w|| = ||v|| + ||w||$</span> and simplifying on both sides gives
 \\[|c + 1|\cdot ||w|| = (|c| + 1)||w||.\\]
-Hence, $|c + 1| = |c| + 1$. Suppose towards a contradiction that $c\leq 0$. Then $|c| = -c$, so $|c + 1| = -c + 1$. If $c + 1 = -c + 1$, then $c = 0$, so $v = 0$, contradicting the assumption that $v\neq 0$. The other possibility is that $-(c + 1) = -c + 1$, which implies the contradiction $-1 = 1$. Therefore, $c > 0$. QED.
+Hence, $|c + 1| = |c| + 1$. Suppose towards a contradiction that $c\leq 0$. Then $|c| = -c$, so $|c + 1| = -c + 1$. If $c + 1 = -c + 1$, then $c = 0$, so $v = 0$, contradicting the assumption that $v\neq 0$. The other possibility is that $-(c + 1) = -c + 1$, which implies the contradiction $-1 = 1$. Therefore, $c > 0$. $\square$
 
 Now let's prove that $T$ is linear.
 
@@ -70,7 +70,7 @@ so $cT(v) = T(cv)$.
 \\[||T(cv) + (-T(-cv))|| = ||T(cv)|| + ||-T(-cv)||,\\]
 which fits the hypothesis of the Lemma. Since $T(cv)$ and $-T(-cv)$ are nonzero (they both have magnitude <span>$|c|\cdot ||v||\neq 0$</span>), the Lemma says there exists $j > 0$ such that $T(cv) = j(-T(-cv))$. Now $-c > 0$, so $T(-cv) = -cT(v)$ and hence $T(cv) = jcT(v)$. By comparing magnitudes once again, we get
 \\[|c|\cdot ||v|| = ||T(cv)|| = ||jcT(v)|| = j|c|\cdot ||v||.\\]
-Therefore, $j = 1$, so $T(cv) = cT(v)$. QED.
+Therefore, $j = 1$, so $T(cv) = cT(v)$. $\square$
 
 **Proposition 2.** For all $v, w\in\mathbb{R}^2$, $T(v + w) = T(v) + T(w)$.
 
@@ -93,7 +93,7 @@ But $||T(v) - T(m)|| = ||T(m) - T(w)||\neq 0$, so $c = 1$. Therefore,
 \\[T(m) = \frac{1}{2}[T(v) + T(w)].\\]
 Finally, recalling that $m = \frac{1}{2}(v + w)$, we deduce that
 \\[T(v + w) = T(2m) = 2T(m) = T(v) + T(w)\\]
-by Proposition 1. QED.
+by Proposition 1. $\square$
 
 Next, we want to prove that $T$ is [orthogonal](https://en.wikipedia.org/wiki/Orthogonal_transformation), which means $T$ preserves angles between vectors. Symbolically, we want to prove the following result.
 
@@ -113,7 +113,7 @@ Since $T$ is a linear isometry, we have
 \\[||v + w||^2 = ||T(v + w)||^2 = ||T(v) + T(w)||^2,\\]
 so
 \\[||v||^2 + 2\langle v, w\rangle + ||w||^2 = ||T(v)||^2 + 2\langle T(v), T(w)\rangle + ||T(w)||^2.\\]
-Hence, $\langle v, w\rangle = \langle T(v), T(w)\rangle$ since <span>$||v|| = ||T(v)||$</span> and <span>$||w|| = ||T(w)||$</span>. QED.
+Hence, $\langle v, w\rangle = \langle T(v), T(w)\rangle$ since <span>$||v|| = ||T(v)||$</span> and <span>$||w|| = ||T(w)||$</span>. $\square$
 
 In particular, since the basis vectors $e_1 = (1, 0)$ and $e_2 = (0, 1)$ are orthogonal, the vectors $T(e_1)$ and $T(e_2)$ must also be orthogonal. Since <span>$||T(e_1)|| = ||e_1|| = 1$</span> and <span>$||T(e_2)|| = ||e_2|| = 1$</span>, we know that $T(e_1)$ and $T(e_2)$ must be on the unit circle. Hence, there exists angles $\theta$ and $\gamma$ such that $T(e_1) = (\cos\theta, \sin\theta)$ and $T(e_2) = (\cos\gamma, \sin\gamma)$. The matrix of $T$ is therefore
 <div>
@@ -157,7 +157,7 @@ We can rewrite the sum as
 \\[\sum_{1\leq i < j\leq n} (2v_iw_iv_jw_j - v_i^2w_j^2 - v_j^2w_i^2) = 0.\\]
 Hence,
 \\[\sum_{1\leq i < j\leq n} -(v_iw_j - v_jw_i)^2 = 0\\]
-and it follows that $v_iw_j = v_jw_i$ for all $i < j$. The desired result now follows by the same argument given in the proof of the original Lemma after we had deduced that $v_1w_2 = v_2w_1$.
+and it follows that $v_iw_j = v_jw_i$ for all $i < j$. The desired result now follows by the same argument given in the proof of the original Lemma after we had deduced that $v_1w_2 = v_2w_1$. $\square$
 
 The three Propositions also work in exactly the same way in $\mathbb{R}^n$ (their proofs only depend on the Lemma, which we have now shown to be true in $\mathbb{R}^n$). Hence, we obtain the following generalized result.
 
@@ -165,4 +165,4 @@ The three Propositions also work in exactly the same way in $\mathbb{R}^n$ (thei
 
 *Corollary.* Let $O(n)$ be the group of orthogonal transformations of $\mathbb{R}^n$, $I(n)$ be the group of isometries on $\mathbb{R}^n$, and $T(n)$ be the group of translations on $\mathbb{R}^n$, with each group operation being function composition. Then $O(n)\cong I(n)/T(n)$.
 
-> *Proof.* The map $\phi(f) = f - f(0)$ is a surjective homomorphism $I(n)\to O(n)$ with kernel $T(n)$.
+> *Proof.* The map $\phi(f) = f - f(0)$ is a surjective homomorphism $I(n)\to O(n)$ with kernel $T(n)$. $\square$
